@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # Description :  This script will print Hello world
-# Date : 08/20/2020
 
 echo
 echo Hello World
