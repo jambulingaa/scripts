@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Description:  This script to check if file is exists or not
+
 clear
 if [ -e /root/sshd.yml ]
 then
