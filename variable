@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Define Variable
+#Description:  This script will define a variable and print the value
 p=pwd
 l=ls
 wi=whoami
