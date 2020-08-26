@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script is to backup filesystem
+# Description: This script is to backup filesystem
 
 tar cvf /tmp/backup.tar /etc
 
