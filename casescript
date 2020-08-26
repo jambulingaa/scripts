@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Description:  This script used for the case statement
+
 echo
 echo Please chose one of the options below
 echo
