@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Script for Pre-Defined Information
+
+read -r -p "Enter name of script: " script
+read -r -p "Whats your fullname: " fname
+read -r -p "Whats the description of this script: " description
+echo "#!/bin/bash" > /root/scripts/${script}
+echo
+echo "################################################" >> /root/scripts/${script}
+echo
+echo "#Author: " $fname >> /root/scripts/${script}
+echo
+echo "#Date Created: " $(date) >> /root/scripts/${script}
+echo
+echo "#Description: " $description >> /root/scripts/${script}
+echo
+echo "#Date Modified: " $(date) >> /root/scripts/${script}
+echo
+echo "################################################" >> /root/scripts/${script}
+echo
+chmod a+x ${script}
+vim ${script}
