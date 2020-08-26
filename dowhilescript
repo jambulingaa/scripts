@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Description:  This script used the for dowhile statement
+
 count=0
 num=10
 while [ $count -lt 10 ]
