@@ -1,8 +1,5 @@
 #!/bin/bash
-# Author: Name
-# Date Created: 08/21/2020
-# Description : Run basic linux tasks
-# Date Modified: 08/21/2020
+# Description : This script will run basic linux tasks
 
 echo
 echo This script will run a few basic taks
