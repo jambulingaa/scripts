@@ -1,8 +1,5 @@
 #!/bin/bash
-# Author: Name
-# Date: 08/21/2020
-# Desciption: This script will run basic admin commands
-# Date Modified: 08/21/2020
+# Desciption: This script will run basic admin tasks
 
 echo
 echo This script will run basic administrative commands
