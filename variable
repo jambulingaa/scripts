@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Define Variable
+p=pwd
+l=ls
+wi=whoami
+d=date
+c='cal 2018'
+
+echo Run variables tasks
+echo
+$p
+echo
+$l
+echo 
+$wi
+echo
+$d
+echo
+$c
+echo
+echo End of the script

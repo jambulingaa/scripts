@@ -1,0 +1,10 @@
+#!/bin/bash
+
+total=`ls -l java* | wc -l`
+echo it will take $total seconds to assign permissions
+echo
+for i in java*
+do
+	chmod a+w $i
+	sleep 1
+done

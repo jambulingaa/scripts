@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Desciption : This script will delete the older files more than 90 days
+
+
+# find /root/professionalscripts -mtime +90 -exec ls -l {} \;
+
+#find /root/professionalscripts -mtime +90 -exec rm {} \;
+
+find /root/professionalscripts -mtime +90 -exec mv {} {}.old \;

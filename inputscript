@@ -1,0 +1,18 @@
+#!/bin/bash
+
+a=`hostname`
+echo Hello, my server name is $a
+echo Hello, my name is Sachin
+echo
+echo
+echo what is your name?
+read name
+echo
+echo Hello $name
+echo
+echo What is your favarote color?
+read b
+echo Favarote color is $b
+echo
+echo End of the script
+

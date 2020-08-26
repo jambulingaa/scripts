@@ -1,0 +1,18 @@
+#!/bin/bash
+# Author: Name
+# Date: 08/21/2020
+# Desciption: This script will run basic admin commands
+# Date Modified: 08/21/2020
+
+echo
+echo This script will run basic administrative commands
+echo
+top | head -10
+echo
+df -h
+echo
+free -m
+echo
+uptime
+echo
+echo End of script

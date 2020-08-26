@@ -1,0 +1,14 @@
+#!/bin/bash
+
+Files="/root/scripts/first.none
+/root/scripts/third.none
+/root/scripts/second.none"
+echo
+for i in $Files
+do
+	if [ ! -e $i ]
+	then
+	echo $i do not exist
+	fi
+done
+

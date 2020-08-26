@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#Description : This script will pull the message from syslog
+
+grep -i stopped /root/professionalscripts/syslog
