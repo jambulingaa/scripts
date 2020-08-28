@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+# Description: This script used to trace the log
 
 tail -fn0 /var/log/syslog | while read line
 
