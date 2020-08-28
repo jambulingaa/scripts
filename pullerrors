@@ -1,5 +1,5 @@
 #!/bin/bash
 
-#Description : This script will pull the message from syslog
+#Description : This script will pull the error message from syslog
 
 grep -i error /root/professionalscripts/syslog
