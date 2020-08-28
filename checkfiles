@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Description: This script will check whether the file exists or not
+
 Files="/root/scripts/first.none
 /root/scripts/third.none
 /root/scripts/second.none"
