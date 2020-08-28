@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Description: This script will change executable permission for multiple files
+
 for i in java*
 do
 	chmod a+x $i
