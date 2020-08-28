@@ -1,4 +1,6 @@
- #!/bin/bash
+#!/bin/bash
+
+# Description: This script will check and create a user account
 
 echo "Please provide a username?"
 read u
