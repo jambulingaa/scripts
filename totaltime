@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Description: This script will show the total time to assign permissions for multiple file
+
 total=`ls -l java* | wc -l`
 echo it will take $total seconds to assign permissions
 echo
