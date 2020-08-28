@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Description: This script will create a user account along with description
+
 echo "Please provide a username?"
 read u
 echo
