@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Description:  This script add the record based on the input
+
 echo Please enter hostname?
 read hostname
 echo
