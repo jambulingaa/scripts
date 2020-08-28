@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Description: This script will rename the file
+
 for filename in *.txt
 do
 	mv $filename ${filename%.txt}.none
