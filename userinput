@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Description: This script will create mutliple files based on the user input
+
 echo How many files do you want ?
 read t
 echo
