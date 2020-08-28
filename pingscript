@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Description:  This script will ping the particular host
+
 hosts="192.168.1.1"
 ping -c1 $hosts &> /dev/null
         if [ $? -eq 0 ]
