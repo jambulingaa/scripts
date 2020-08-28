@@ -1,4 +1,6 @@
 #!/bin/bash
+# Description:  This script will add and delete record based on the input
+
 echo
 echo Please select one of the following options:
 echo
