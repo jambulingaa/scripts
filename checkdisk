@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Description:  This script will check the disk space
+
 a=`df -h | egrep -v "tmpfs|xvda1" | tail -n+2 | awk '{print $5}' | cut -d'%' -f1`
 for i in $a
 do
