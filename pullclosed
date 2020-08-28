@@ -1,5 +1,5 @@
 #!/bin/bash
 
-#Description : This script will pull the message from syslog
+#Description : This script will pull the message from syslog and copy into another file
 
 grep -i closed /root/professionalscripts/syslog > /root/professionalscripts/outputclosed
