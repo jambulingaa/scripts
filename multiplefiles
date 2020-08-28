@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Description: This script will create multiple file
+
 for i in {1..10}
 do
 	touch java.$i
