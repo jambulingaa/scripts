@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Description:  This script delete record based on the input
+
 echo Please enter hostname or IP address?
 read host
 echo
