@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Description:  This script will display the file count
+
 a=`ls -l file* | wc -l`
 
 	if [ $a -eq 5 ]
