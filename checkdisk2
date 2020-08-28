@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Description:  This script will display the disk space status
+
 echo
 echo Following is the disk space status
 echo
