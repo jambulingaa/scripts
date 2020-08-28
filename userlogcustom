@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Description: This script will list the user who logged in based on the input
 
 echo "please enter day (e.g. Mon)"
 
