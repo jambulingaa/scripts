@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Description: This script will disable the user based on the args
+
 lastlog | tail -n+2 | grep 'test' | awk '{print $1}' | xargs -I{} echo {}
 
 
