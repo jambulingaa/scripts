@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Description: This script will check and assign a user id
+
 echo "Please provide a username?"
 read u
 echo
