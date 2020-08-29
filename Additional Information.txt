@@ -1,0 +1,210 @@
+Kernel - Interface between hardware and sotware
+
+Shell - It's like a container. Interface between users and Kernal/OS. CLI is a shell.
+
+Shell Scripting - Put instruction in a shell and RUN it.
+
+Type of Linux Shells
+Gnome, KDE, sh, bash, csh, tcsh , ksh
+cat /etc/shells
+
+bash - this will allow us to write bash script
+echo $0 - it will tell which shell we are using
+
+How to run a shell script
+
+Absolute Path : /home/scripts/filename
+Relative Path : cd /home/scripts
+                            ./filename
+
+Linux File Types
+File Symbol 	Meaning
+-		Regular file
+d		Directory
+l		link
+c		special file or device file
+s		socket
+p		named pipe
+b		block device
+
+Wildcards
+A wildcard is a character that can be used as a substitute for any of a class of characters in a search
+* - represents zero of more characters
+? - represents a single character
+[] - represents a range of characters
+
+File Owndership
+
+2 owners of a file or directory
+
+chown name filename - changes the ownership of a file or directory
+chgrp name filename - changes the group ownership of a file or directory
+
+Recurzie owership changes option
+-R
+
+chown -R name filename - It will apply to all the directory structure
+chgrp -R name filename - It will apply to all the directory structure
+
+Hitting TAB key completes the available commands, files or directories
+
+chm TAB
+ls j<TAB>
+cd  Des<TAB>
+
+Hitting up arrow key on the keyboard returns the last command ran
+
+whatis ls  - it will show the description
+
+Multiple files can be combined into one.
+One file can be split into multiple files
+
+cat file1 file2 file3 > file4
+split file4
+split -l 100 file.txt childfile
+split file.txt into 100 lines per file and output to childfile1, childfile2
+
+vi editor
+vi filename
+to save a file ESC and then shift+ZZ
+to get a blank line between 2 lines ESC and then o
+to get a deleted line back, ESC and then u
+to search for the specific word , ESC and then /word.
+
+sed command  - It replace a string in a file with a newstring. Find an delete a line.  Remove empty lines. Remove the first or n lines in a file. To replace tabs with spaces. Show defined lines from a file. Substitue within vi editor.
+
+sed -i 's/oldkeyword/newkeyword/g' filename - This will replace the string.
+
+sed -i '1d' filename - This will remove the first line in a file
+
+sed -i '1,2d' filename - This will delete the first 2 lines.
+
+sed -i 's/\t/ /g' filename - This will replace tabs with space.
+
+sed -i -n 12,18p filename - This will show the defined lines from a file.
+
+sed -i 12,18d filename - This will show the lines except 12 to 18 lines
+
+sed -i G filename - This will provide a space between 2 lines
+
+sed -i '8!s/oldkeyword/newkeyword/' filename  - This will replace the string in all the places except 8th line
+
+:%s/oldkeyword/newkeyword/  - To substitute within vi editor
+
+sed -i 's/oldkeyword//g' filename   - This will remove the keyword
+
+sed -i '/oldkeyword/d' filename - This will find the keyword and delete the line.
+
+sed -i '/^$/d' filename - This will delete the empty line.
+
+System  Utility Commands
+
+date
+uptime
+hostname
+uname -a
+which command (e.g., which pwd) _ to show the path of the command location
+cal
+cal date year ( e.g., 	 cal 7 2019)
+cal month ( e.g., cal 2016 )
+bc
+
+Log Monitoring
+
+Log Dirctory = /var/log
+boot
+chronyd = NTP
+cron
+maillog
+secure
+messages
+httpd
+
+Terminal Commands
+
+clear - Clears your screen
+exit - exit out of the shell, terminal or a user session
+script - the script command stores terminal activities in a log file that can be named by a user, when a name is not provided by a user, the default file name, trypescript is used
+
+script filename - to start the log activity
+exit - to end the log activity
+
+Aliases
+It is a very popular command that is used to cut down on lengthy and repetitive commands
+
+eg., alias tell="whoami; hostname; pwd"
+alias dir""ls -l | grep ^d"
+alias d="df -h | awk '{print  \$6}' | cut -c1-4"
+
+to delete the alias
+e.g., unalias tell
+
+NIC Bonding
+NIC = Network Interface Card bonding is also known as Network bonding. It can be defined as the aggregation or combination of multiple NIC into a single bond interface.
+It's main purpose is to provide high availability and redundancy.
+
+File Transfer command
+
+ftp
+scp
+rsync
+
+ftp destinationservername
+ftp > put filename
+ftp > bye
+
+scp filename destinationservername:/path
+
+RAID (Redundant Array of Independent Disk )
+Type : RAID0, RAID1, RAID5
+
+Linux OS Hardening
+User account
+Remove unwanted packages
+Stop un used services
+check on listening ports
+secure ssh configuration
+enable firewall ( iptables/firewalld)
+enable SELinux
+changing listening service port numbers
+keep your OS up to date ( security patching)
+
+cat /etc/passwd
+
+chage -l username 
+
+cat /etc/login.defs
+
+
+rpm -qa - To get the list of package
+rpm -e package name - To delete the package
+
+systemctl -a - To get the list of services
+
+netstat -tunlp - To check the ports which are open and listening
+
+cd /etc/ssh/
+more sshd_config
+PermitRootLogin No
+
+firewall-config - To config the firewall
+
+SELinux - control the permission for the process.
+
+Troubleshooting
+
+check disk space : df -h, du, du -a | more  
+check processing : top, free, lsmem, cat /proc/meminfo, vmstat, pmap<PID>, dmidecode, lscpu or cat /proc/cupinf 
+check disk issues : iostat -y 5, lsof
+check networking : tcpdump -i enps03, lsof -i -P -n | grep -i listen, netstat -plnt or ss -plnt, iftop
+check system uptime : uptime
+check logs: cd /var/log, cat message | grep -i error
+check hardware status by logging into system console
+other tools : htop, iotop, iptraf, psacct
+
+
+
+
+
+
+
