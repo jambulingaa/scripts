@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Description : This script to schedule a cron job
+
+# crontab -e   : Type the command in the terminal to create a job
+
+# crontab -l  :  Type the command in the terminal to list the cronjob
+
+# Minute Hour DayofMonth MonthofYear DayofWeek scriptpath/filename> outputfilename
+
+20 29 * * * /root/scripts/pingscriptall > /root/ping-output
+
+# To schedule an email notification, email relay server has to be configured in linux machine .
+
+# Minute Hour DayofMonth MonthofYear DayofWeek scriptpath/filename | mail -s "EmailSubject" email@domain.com
+
+# 20 29 * * * /root/scripts/pingscriptall | mail -s "connectivity status" email@domain.com
